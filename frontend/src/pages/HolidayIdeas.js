@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './HolidayIdeas.css';
 
 import logo1 from './images/logo1.jpg' 
@@ -37,7 +38,13 @@ const HolidayIdeas = () => {
       images: [logo1,logo2],
     },
   ]);
-
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    // Use axios to make a GET request to the local server.
+    axios.get('http://localhost:3001/holiday-ideas-data')
+      .then((response) => setData(response.data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
   const [selectedIdea, setSelectedIdea] = useState(null);
   const [showPictures, setShowPictures] = useState(false);
   const [showDetails, setShowDetails] = useState({});
