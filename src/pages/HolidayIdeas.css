@@ -1,0 +1,133 @@
+.holiday-ideas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.holiday-ideas .idea-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.holiday-ideas .idea-box {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.holiday-ideas .idea-box:hover {
+  transform: translateY(-5px);
+}
+
+.holiday-ideas .idea-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.holiday-ideas .idea-box p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: #555;
+}
+
+.holiday-ideas .idea-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #777;
+}
+
+.holiday-ideas .about-button {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.holiday-ideas .about-button:hover {
+  background-color: #e0a800;
+}
+
+.holiday-ideas .more-button {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.holiday-ideas .more-button:hover {
+  background-color: #c60055;
+}
+
+.holiday-ideas .idea-more-details {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  text-align: left;
+}
+
+.holiday-ideas .idea-more-details h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.holiday-ideas .idea-more-details p {
+  color: #555;
+}
+
+.holiday-ideas .picture-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.holiday-ideas .picture-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.holiday-ideas .picture-content img {
+  max-width: 80%;
+  max-height: 80%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.holiday-ideas .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
