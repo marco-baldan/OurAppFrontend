@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Use axios to make a GET request to the local server.
-    axios.get('https://main--glittering-gaufre-956229.netlify.app/holiday-ideas-data')
+    axios.get('https://glittering-gaufre-956229.netlify.app/holiday-ideas-data')
       .then((response) => setData(response.data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
