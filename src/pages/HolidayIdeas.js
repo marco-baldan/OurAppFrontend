@@ -97,7 +97,7 @@ const HolidayIdeas = () => {
     </span>
     <div className="picture-content">
       {selectedIdea.images.map((image, index) => (
-        <img key={index} src={image} alt={`Image ${index + 1}`} />
+        <img key={index} src={image}  />
       ))}
     </div>
   </div>
